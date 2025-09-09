@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website using html and css only</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div><a href="#" class="logo">Portfolio.</a></div>
+        <div><button class="sidebar-btn"><i class='bx  bx-menu-right'  style='color:#7cf03d'></i> </button></div>
+        <ul>
+            <li><a href="#" style="color: #7cf03d; text-decoration: underline; text-decoration-color: white; text-underline-offset: 10px;">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+            <h1>Aayush Maan</h1>
+            <h2>I'm a 
+                
+                <span style="--i:4;" data-text="Frontend Developer">Frontend Developer </span>
+                <span style="--i:2;" data-text="Full Stack Web Developer">Full Stack Web Developer</span>
+                <span style="--i:3;" data-text="Web Designer">Web Designer </span>
+                <span style="--i:1;" data-text="B.Tech Student">B.Tech Student</span>
+            </h2>
+            <p>I’m a B.Tech student passionate about Java, full-stack web development, and exploring AI. I work with Java (OOP, JDBC, Spring Boot), front-end (HTML, CSS, JS, React), and databases like MongoDB.<br> Recently, I’ve started building small projects using AI. I’m actively looking for an internship to apply my skills, learn from real-world challenges, and grow as a developer.<br> Let’s connect if you’re hiring interns, working on exciting projects, or just love building with code!</p>
+            <div class="btn-sci">
+                <a href="resume.pdf" download="Aayush_Maan_Resume" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><img style="filter: invert();" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAA+0lEQVR4AeyUYRLBMBCFw0m4iZvgJDgJTsJNOIr3tX2dtWOmNPhhZPKa7GvyJTbRaflg+Tp8ph+zkKpr3vlJxIu0l7ZSVY1wdosAsvslnRpF+DWBcpxeD4cZvuumAHa/s15vIpzZ5Hmizlw6S1U1w1eiWc6/rGKP1j4tm+Hw8TmnEkuGM9CKB2qPFii3Cm0EA4xPfLdAhmvsYAXIAnkgYBbp/TFwJvvADwRBLIoaayycAyffa1HyArLaOgaeYccW1T9JTxOMgTcTn3n84Q+z9Dtp4d5a8YrZo40+6eAPhW/1H7ycFu6w1Q8SwR5t9PWqAMe3iAslw/HephsAAAD//3W4FiUAAAAGSURBVAMAqC4tL4eVVtgAAAAASUVORK5CYII=" alt="">  </a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABjklEQVR4AcTU0VHEMAwE0EAjQCVAJUAlQCVAJdAJUAnoeZBHCc7l8sFw47VlabVSfHFOpz/8/bv4bTzcU+A98BWwvsb6ELgKrI5DnUskRliB8x8Vq9h97LMIX2znY01cEszZ410W+VVgJE5UZ2OpsZewPGtnLMWJAsJjTCeB58BH4C3Atub+OnwQy0TY8U35q+KCqmeMAPsuposAEbY19wpBhNtwRL1AFe/ORts3ZSOybkxQxe0TyI4g91vrSyHksU5V/LIQKrm4V816NEiOeCbeK0b0LLBneNLKb1q180polSt7w17+X01rTVzlPQWWT9qOaU1co7o5poBGcOVA65pRxV0aAVW9KV4p3xXJoyIE3QuglegvQxUnLEDsM5hpSyYUrj5wsnB3hkHD1zLMafa2cOgYwU1ju41uZU9ACng6vDBnA7c7auecEghadZy+0bGIVchTtPuW4gKEEa0KwCFxPPyZMKGROH8mZJI9fwUxx+Ajxq6xZq+Jt2BMkhQYiRP2vwRtPLbEx1lHer8BAAD//+XZbHkAAAAGSURBVAMA1txQLyCkIXIAAAAASUVORK5CYII=" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABfElEQVR4AbzUjU3EMAyG4YNJYBOYBJgEmASYBJgERsGPKh+pL00q8adYrWP79Rc33PnhD//+FX4RB6kWW7uWulViVX4b0Y9iT+HP1lUkqPOM12VV+HNsv4U9hp2FXYZpuCqKvXaJvcbGdZjaeCyrwj9j+y7sJkwRXyPqT44dOfaA1azAETtUuL0WyHcae/ecxhKsuZwmtLz24CKSASn2pMx4mDjL2AOnZ1twuQnM8fCpT8VyzNmzayN4KqZQcZ7GrdBgCFYwgosD+lDZgHpNXwRnNoOr98GMxryB+W4T9eKbtgcOSGnO22n4eZofwSmkFCSBGtjfvCmS9ygHpN4HTGD6mhoZ1onN4P77FAED+qAJ5A/HM4JTTCmwBszNaYHGo0l3PFtwN4NRCtpaAjUHlpOnafO6vy1mqJBiSlcF4SRQc7l811NNhL9XVS7ZnLfAWdkC5VNuhKsGFS5hBs4GxkOxb8CM5z2DnhWuoDcKudWol1/tmFfhx8BvvHwBAAD//7TeubAAAAAGSURBVAMAMIJcLxkncyAAAAAASUVORK5CYII=" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAABCElEQVR4AeyT4REBMRCFjUrohE6oBJXQCZ3QCe9bdm7n7rKJcX6YYfZdYrPvS3LWfPbFzx8++nJrr2UhVyYtl6MP36v0LN1fumrM1K/DL8szInyj1E5aSe+G3w7/0c0RzoLnPxk5pPkj3BITPez2Ec7VSuyLFpYSo4a2iPCa46aCtbSVmGvIw+HZqfuEkxJswqjpaBjP4aMVhSRGfjRUKHmmHd50TVnoY/q+1lnGc7h8aXDaFqhDBvCsE4AjNzeN8eS2W5MrL+KQxorwgzxZB2i5GkDhWGGEs0AP82eh1RDfozCimGNOLcLLyQdwS+jBJhQgbhJFt6CYY04tkr2LePIuO9Hsd+EPAAAA//+vSOFRAAAABklEQVQDAP6KNy8HrwnBAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="aayu2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
