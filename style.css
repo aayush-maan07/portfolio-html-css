@@ -57,6 +57,7 @@ li a:hover {
 }
 
 .home {
+    position: fixed;
     display: flex;
     align-items: center;
     height: 100vh;
