@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-body, html{
+
+body,
+html {
     height: 100%;
     width: 100%;
 }
@@ -361,7 +363,7 @@ li a:hover {
     border: none;
     font-size: xx-large;
     font-weight: 700;
-    
+
 }
 
 
@@ -388,12 +390,15 @@ li a:hover {
     }
 
     .home-info p {
-        height: 110px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+
     }
 
-    .home-info h2{
+    .home-info h2 {
         padding-top: 8px;
     }
 }
